@@ -1,25 +1,25 @@
 import React from 'react'
-
+import style from "./display.module.css"
+import TableData from './component/tableData'
 const Display = () => {
   return (
-    <table>
-    <thead>
+    <div className={style.tableWrapper}>
+      <table className={style.table}>
+    <thead className={style.thead}>
       <tr>
-        <th>Shopping List</th>
+        <th className={style.thPaddingLeft}>Shopping List</th>
         <th>Date</th>
         <th>Cost</th>
-        <th>Status</th>
+        <th className={style.thPaddingRight}>Status</th>
       </tr>
     </thead>
     <tbody>
-      <tr>
-        <td>My Shopping</td>
-        <td>01/08/2023</td>
-        <td>100TK</td>
-        <td>complete</td>
-      </tr>
+     <TableData title={"my shopping list"} date={"01/04/2023"} cost={100} status={"complete"}/>
+     <TableData title={"test title"} date={"01/04/2023"} cost={100} status={"complete"}/>
+     <TableData title={"test title"} date={"01/04/2023"} cost={100} status={"complete"}/>
     </tbody>
   </table>
+    </div>
   )
 }
 

@@ -1,0 +1,29 @@
+.table{
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    background-color: white;
+    text-align: left;
+    line-height: 41px;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    min-width: 650px
+
+}
+.thead{
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.thPaddingLeft{
+    padding-left: 10px;
+}
+.tPaddingRight{
+    padding-right: 10px;
+}
+
+.tableWrapper{
+    width: 100%;
+    overflow: scroll;
+}
