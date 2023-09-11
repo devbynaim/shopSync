@@ -1,0 +1,54 @@
+.addListChild {
+    border: 0;
+    font-family: Inter;
+    font-size: 14px;
+    background-color: transparent;
+    flex: 1;
+    border-radius: 5px 0 0 5px;
+    display: flex;
+    flex-direction: row;
+    padding: 12px 0 12px 15px;
+    align-items: center;
+    justify-content: flex-start;
+    outline: 0;
+  }
+  .iconPlus {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    
+  }
+  .addList,
+  .iconPlusWrapper {
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .iconPlusWrapper {
+    cursor: pointer;
+    border: 1px solid rgb(0 0 0 / 5%);
+    padding: 3px 8px;
+    background-color: transparent;
+    align-self: stretch;
+    border-radius: 0 5px 5px 0;
+    box-sizing: border-box;
+    width: 60px;
+    height: 41px;
+    flex-shrink: 0;
+    justify-content: center;
+  }
+  .iconPlusWrapper:hover {
+    background-color: rgba(230, 230, 230, 0.31);
+    cursor: pointer;
+  }
+  .addList {
+    position: relative;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 0px 1px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    justify-content: flex-start;
+    margin-top: 25px;
+  }
+  

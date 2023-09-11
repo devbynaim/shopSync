@@ -1,16 +1,11 @@
-import styles from "./create.module.css";
+import AddItemElement from "../../../shared/addItem";
+import Modal from "../../../shared/modal";
 const Create = () => {
   return (
-    <div className={styles.addList}>
-      <input
-        className={styles.addListChild}
-        type="text"
-        placeholder="Shopping List Name"
-      />
-      <button className={styles.iconPlusWrapper}>
-        <img className={styles.iconPlus} alt="" src="add.svg" />
-      </button>
-    </div>
+    <>
+    <AddItemElement placeholder= "Shopping List Name"/>
+    <Modal/>
+    </>
   );
 }
 
