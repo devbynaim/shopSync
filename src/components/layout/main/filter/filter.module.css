@@ -1,0 +1,65 @@
+.filters {
+    align-self: stretch;
+    font-weight: 500;
+  }
+  .egg,
+  .filters {
+    position: relative;
+  }
+  .tag,
+  .tag1,
+  .tag2,
+  .tag3 {
+    border-radius: 2px;
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    padding: 5px 10px;
+    align-items: center;
+    justify-content: center;
+    min-width: 80px;
+    max-width: 100px;
+  }
+  .tag {
+    margin: 0;
+    background-color: #0a7aff;
+    color: #fafafa;
+  }
+  .tag1,
+  .tag2,
+  .tag3 {
+    background-color: #fff;
+  }
+  .tag1:hover, .tag2:hover, .tag3:hover {
+    background-color: rgba(10, 120, 255, 0.5);
+    cursor: pointer;
+    color: #fff;
+  }
+  .filter,
+  .tagParent {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 10px;
+  }
+  .tagParent {
+    align-self: stretch;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .filter {
+    position: relative;
+    background-color: #fff;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    flex-direction: column;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: left;
+    font-size: 14px;
+    color: #000;
+    font-family: Inter;
+    margin: 8px 0;
+  }
+  

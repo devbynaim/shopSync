@@ -1,0 +1,146 @@
+.checkboxMaterialDesign {
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    padding: 2px;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .shoppingListMx {
+    flex: 1;
+    position: relative;
+  }
+  .checkboxMaterialDesignParent {
+    width: 150px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    min-width: 150px;
+    max-width: 150px;
+  }
+  .div {
+    flex: 1;
+    position: relative;
+    display: inline-block;
+    min-width: 70px;
+    max-width: 70px;
+  }
+  .left {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+  }
+  .printIcon {
+    position: absolute;
+    margin: 0 !important;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    z-index: 0;
+  }
+  .addList,
+  .addList1,
+  .iconPrinter,
+  .right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .iconPrinter {
+    cursor: pointer;
+    border: 0;
+    padding: 0;
+    background-color: transparent;
+    justify-content: flex-end;
+    position: relative;
+    min-width: 18px;
+    max-width: 20px;
+  }
+  .addList,
+  .addList1,
+  .right {
+    flex-wrap: wrap;
+  }
+  .right {
+    flex: 1;
+    justify-content: flex-end;
+    gap: 20px;
+    min-width: 100px;
+    max-width: 100px;
+  }
+  .addList,
+  .addList1 {
+    position: absolute;
+    height: 34.29%;
+    width: 100%;
+    top: 31.43%;
+    right: 0;
+    bottom: 34.29%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    padding: 12px 10px;
+    box-sizing: border-box;
+    justify-content: flex-start;
+    gap: 10px;
+  }
+  .addList1 {
+    top: 65.71%;
+    bottom: 0;
+  }
+  .cost,
+  .date,
+  .shoppingList {
+    position: relative;
+    font-weight: 500;
+    display: inline-block;
+    width: 150px;
+    flex-shrink: 0;
+    min-width: 150px;
+    max-width: 150px;
+  }
+  .cost,
+  .date {
+    width: 70px;
+    min-width: 70px;
+  }
+  .cost {
+    max-width: 70px;
+  }
+  .addList2 {
+    position: absolute;
+    height: 31.43%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    bottom: 68.57%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 12px 10px;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .table {
+    position: relative;
+    width: 100%;
+    height: 140px;
+    text-align: left;
+    font-size: 14px;
+    color: #000;
+    font-family: Inter;
+  }
+  
