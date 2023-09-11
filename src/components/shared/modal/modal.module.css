@@ -12,7 +12,8 @@
 .container{
     position: relative;
     background-color: #F0F8FB;
-    height: 400px;
+    min-height: 400px;
+    max-height: 515px;
     box-shadow: 0 0px 2px rgba(0, 0, 0, 0.2);
     padding: 10px;
     top: 40px;
@@ -67,4 +68,60 @@
 .tag li:hover{
     cursor: pointer;
     color: #228b2285;
+}
+
+.table{
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    background-color: white;
+    text-align: left;
+    line-height: 41px;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    min-width: 500px
+
+}
+.thead{
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.thPaddingLeft{
+    padding-left: 10px;
+}
+.tPaddingRight{
+    padding-right: 10px;
+}
+
+.tableWrapper{
+    width: 100%;
+    min-height: 300px;
+    max-height: 315px;
+    overflow: scroll;
+}
+
+
+.payDiv{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 10px;
+
+}
+
+.checkoutBtn{
+    background-color: #388e3ccc;
+    color: white;
+    border: none;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    width: 100px;
+    height: 35px;
+    border-radius: 5px;
+}
+.checkoutBtn:hover{
+    background-color: #388E3C;
+    cursor: pointer;
 }
