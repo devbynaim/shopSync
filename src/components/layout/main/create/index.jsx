@@ -7,7 +7,7 @@ const Create = () => {
   return (
     <>
     <AddItemElement placeholder= "Shopping List Name" open={open} />
-    {isOpen && <Modal close={close} title={title}/>}
+    {isOpen && <Modal close={close} actionType="add" title={title}/>}
     </>
   );
 }

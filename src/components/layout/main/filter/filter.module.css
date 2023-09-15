@@ -23,8 +23,10 @@
   }
   .tag {
     margin: 0;
-    background-color: #0a7aff;
-    color: #fafafa;
+  }
+  .active{
+      background-color: #0a7aff;
+      color: #fafafa;
   }
   .tag1,
   .tag2,
@@ -63,3 +65,11 @@
     margin: 8px 0;
   }
   
+  .active{
+      background-color: #0a7aff;
+      color: #fafafa;
+  }
+  .active:hover{
+      background-color: #0a7aff;
+      color: #fafafa;
+  }

@@ -10,8 +10,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "jspdf-autotable": "^3.6.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-to-print": "^2.14.13",
     "uniqid": "^5.4.0"
   },
   "devDependencies": {

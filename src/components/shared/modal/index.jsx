@@ -8,7 +8,6 @@ const defaultList = {
   name: "",
   quantity: "1KG",
   price: 100,
-  date: null,
   id: uniqid()
 };
 
@@ -18,7 +17,7 @@ const Modal = ({ close, title,actionType="add" }) => {
   const [lists, setList] = useState([]);
   const [totalcost, setTotalcost] = useState(0);
   const { dispatch } = useContext(ListContext);
-
+  const isEdit = actionType=="add"?"checkout":"update"
   const handleChange = (e, index) => {
     let key = e.target.name;
     let value = e.target.value;
@@ -105,7 +104,7 @@ const Modal = ({ close, title,actionType="add" }) => {
           </table>
           <div className={style.payDiv}>
             <p>Total Cost {totalcost}TK</p>
-            <button className={style.checkoutBtn} onClick={action}>Checkout</button>
+            <button className={style.checkoutBtn} onClick={action}>{actionType=="add"?"checkout":"update"}</button>
           </div>
         </div>
       </div>

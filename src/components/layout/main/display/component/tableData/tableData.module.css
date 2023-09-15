@@ -1,4 +1,5 @@
-.tr{
+.tableDataRow{
+    text-decoration: line-through;
 }
 .tdPaddingLeft{
     padding-left: 10px;

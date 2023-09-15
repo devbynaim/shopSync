@@ -1,21 +1,20 @@
+import { useContext, useState } from "react";
 import styles from "./filter.module.css";
+import uniqid from "uniqid"
+import ListContext from "../../../../context/data/ListContext";
+const tags = ['Date','cost','runnig','complete']
 const Filter = () => {
+  const [filters,setFilter] = useState([])
+  const {dispatch,listsState} = useContext(ListContext)
   return (
     <div className={styles.filter}>
       <span className={styles.filters}>Filters</span>
       <div className={styles.tagParent}>
-        <ul className={styles.tag}>
-          <div className={styles.egg}>Date</div>
-        </ul>
-        <div className={styles.tag1}>
-          <div className={styles.egg}>Cost</div>
+        {tags.map(tag=>{
+          return <div className={`${styles.tag1} ${filters.indexOf(tag)!=-1 && styles.active}`} key={uniqid()}>
+          <div className={styles.egg}>{tag}</div>
         </div>
-        <div className={styles.tag2}>
-          <div className={styles.egg}>Running</div>
-        </div>
-        <div className={styles.tag3}>
-          <div className={styles.egg}>Complete</div>
-        </div>
+        })}
       </div>
     </div>
   );
