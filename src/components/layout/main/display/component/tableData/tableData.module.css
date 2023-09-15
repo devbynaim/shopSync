@@ -17,6 +17,12 @@
     gap: 17px;
 }
 
+.checkboxWrapper{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
 .actionBtnDiv{
     display: flex;
     gap: 20px;

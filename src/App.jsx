@@ -4,11 +4,11 @@ import Main from "./components/layout/main"
 
 const App = () => {
   return (
-    <>
-    <Header/>
-    <Main/>
-    <Footer/>
-    </>
+        <>
+        <Header/>
+        <Main/>
+        <Footer/>
+        </>
   )
 }
 
