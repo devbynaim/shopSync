@@ -16,3 +16,15 @@ const printPdf = (listItem) => {
 }
 
 export default printPdf
+
+
+export function sortByProperty(arr, property, order) {
+  if (order === "low") {
+    return arr.slice().sort((a, b) => a[property] - b[property]);
+  } else if (order === "high") {
+    return arr.slice().sort((a, b) => b[property] - a[property]);
+  } else {
+    // Default to ascending order if order is not specified or invalid
+    return arr.slice().sort((a, b) => a[property] - b[property]);
+  }
+}

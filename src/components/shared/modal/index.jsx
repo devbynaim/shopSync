@@ -7,11 +7,10 @@ import style from "./modal.module.css";
 const defaultList = {
   name: "",
   quantity: "1KG",
-  price: 100,
   id: uniqid()
 };
 
-const tag = ['tomato', 'orange', 'apple', 'vandi', 'potato'];
+const tag = ['tomato', 'carrot', 'egg', 'corn', 'potato','rice'];
 
 const Modal = ({ close, title,actionType="add" }) => {
   const [lists, setList] = useState([]);
@@ -45,7 +44,7 @@ const Modal = ({ close, title,actionType="add" }) => {
   };
 
   function addItem(index, value) {
-    let newItem = { ...defaultList, id: uniqid(), name: value ?? tag[index] };
+    let newItem = { ...defaultList,price: Math.floor(Math.random()*150+10), id: uniqid(), name: value ?? tag[index] };
     setList(preList => ([...preList, newItem]));
   }
 
