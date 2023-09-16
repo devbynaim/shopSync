@@ -39,19 +39,6 @@ Sopsync is a web application designed to simplify your shopping experience. This
 4. Run `npm start` to start the development server.
 5. Open your web browser and go to `http://localhost:3000` to use Sopsync.
 
-## How to Contribute
-
-If you'd like to contribute to this project or report issues, please follow these steps:
-
-1. Fork the project.
-2. Create a new branch with a descriptive name (`git checkout -b feature/new-feature` or `git checkout -b bug/issue-fix`).
-3. Make your changes and commit them (`git commit -m 'Add new feature'`).
-4. Push your changes to your fork (`git push origin feature/new-feature`).
-5. Open a pull request on the original repository.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Acknowledgments
 
